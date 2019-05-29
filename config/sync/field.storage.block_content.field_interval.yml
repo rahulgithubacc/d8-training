@@ -1,0 +1,21 @@
+uuid: 7de2a012-d533-4900-9956-81fded14e7c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_interval
+field_name: field_interval
+entity_type: block_content
+type: list_integer
+settings:
+  allowed_values: {  }
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

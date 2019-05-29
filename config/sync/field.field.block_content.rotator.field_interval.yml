@@ -1,0 +1,21 @@
+uuid: a127890a-effd-4f86-a245-22e56bdbdc2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.rotator
+    - field.storage.block_content.field_interval
+  module:
+    - options
+id: block_content.rotator.field_interval
+field_name: field_interval
+entity_type: block_content
+bundle: rotator
+label: Interval
+description: "1|1\r\n2|2\r\n3|3"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer
