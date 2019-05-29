@@ -1,0 +1,8 @@
+access all views:
+  title: 'Access training content'
+  description: 'A custom permission for my module'
+  restrict access: TRUE
+access content to all users:
+  title: 'Access training content for all users'
+  description: 'A custom permission for my module'
+  restrict access: TRUE

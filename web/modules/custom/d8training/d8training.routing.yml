@@ -1,0 +1,28 @@
+d8-training.dynamic:
+  path: '/welcome/{name}'
+  defaults:
+    _controller: 'Drupal\d8training\Controller\mydynamicController::content'
+    _title: 'Dynamic Route exercise'
+  requirements:
+    _permission: 'access content'
+d8-training:
+  path: '/d8training'
+  defaults:
+    _controller: '\Drupal\d8training\Controller\myController::content'  
+    _title: 'd8-training'
+  requirements:
+    _permission: 'access all views'       
+d8-training-all-users:
+  path: '/d8trainingall'
+  defaults:
+    _controller: '\Drupal\d8training\Controller\myController::content'  
+    _title: 'd8-training'
+  requirements:
+    _permission: 'access content'
+d8-training-node:
+  path: '/para/{nodeid}'          
+  defaults:
+    _controller: 'Drupal\d8training\Controller\nodeController::content'  
+    _title: 'Hello'
+  requirements:
+    _permission: 'access content'      
