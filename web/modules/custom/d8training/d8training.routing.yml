@@ -26,3 +26,31 @@ d8-training-node:
     _title: 'Hello'
   requirements:
     _permission: 'access content'      
+simpleform:
+  path: '/simpleform'
+  defaults:
+    _form: 'Drupal\d8training\Form\SimpleForm'
+    _title: 'Custom Module for building normal forms'
+  requirements:
+    _permission: 'access content'    
+configform:
+  path: '/weather-config'
+  defaults:
+    _form: 'Drupal\d8training\Form\configform'
+    _title: 'Custom Module for building config forms'
+  requirements:
+    _permission: 'access content' 
+dependencyinjectionform:
+  path: '/dic-form'
+  defaults:
+    _form: 'Drupal\d8training\Form\dependencyinjectionform'
+    _title: 'Custom Module for building forms and dependency injection'
+  requirements:
+    _permission: 'access content' 
+ajaxform:
+  path: '/ajaxform'
+  defaults:
+    _form: 'Drupal\d8training\Form\ajaxform'
+    _title: 'Custom Module for building AJAX forms'
+  requirements:
+    _permission: 'access content'            

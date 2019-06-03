@@ -1,0 +1,11 @@
+d8training.tab_1:
+  route_name : system.admin_config_system
+  title: Tab1
+  base_route: system.admin_config_system
+  weight: 10
+
+d8training.tab_2:
+  route_name: system.admin_config_system
+  title: Tab2
+  base_route: system.admin_config_system
+  weight: 20
