@@ -1,5 +1,5 @@
 d8-training.dynamic:
-  path: '/welcome/{name}'
+  path: '/simpleform/{name}'
   defaults:
     _controller: 'Drupal\d8training\Controller\mydynamicController::content'
     _title: 'Dynamic Route exercise'
@@ -8,14 +8,14 @@ d8-training.dynamic:
 d8-training:
   path: '/d8training'
   defaults:
-    _controller: '\Drupal\d8training\Controller\myController::content'  
+    _controller: 'Drupal\d8training\Controller\myController::content'  
     _title: 'd8-training'
   requirements:
     _permission: 'access all views'       
 d8-training-all-users:
   path: '/d8trainingall'
   defaults:
-    _controller: '\Drupal\d8training\Controller\myController::content'  
+    _controller: 'Drupal\d8training\Controller\myController::content'  
     _title: 'd8-training'
   requirements:
     _permission: 'access content'
@@ -54,3 +54,18 @@ ajaxform:
     _title: 'Custom Module for building AJAX forms'
   requirements:
     _permission: 'access content'            
+d8training.edit:
+  path: '/d8training-path/{node}'
+  defaults:
+    _controller: '\Drupal\d8training\Controller\CustomAccessController::content'
+    _title: 'Custom access check'
+  requirements:
+    _d8training_access_check: 'TRUE'
+ajax:
+  path: '/ajax'
+  defaults:
+    _form: 'Drupal\d8training\Form\Ajax'
+    _title: 'Ajax example'
+  requirements:
+    _permission: 'access content'    
+    

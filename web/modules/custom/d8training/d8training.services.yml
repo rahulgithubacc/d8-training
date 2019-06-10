@@ -1,0 +1,8 @@
+services:
+  d8training.myservice:
+    class: Drupal\d8training\MyService
+  d8training.access_checker:
+    class: Drupal\d8training\Access\CustomAccessCheck
+    arguments: ['@d8training.myservice']
+    tags:
+      - { name: access_check, applies_to: _d8training_access_check }

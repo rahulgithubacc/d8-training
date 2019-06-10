@@ -50,10 +50,10 @@ class ajaxform extends FormBase{
         '#ajax' => [
             'callback' => '::show_states',
             'wrapper' => 'state-name',
-       ],  
+        ],  
       );
     
-    //   $states = [];
+      $states = [];
      if($form_state->getValue('country') == 0){
     
      }
