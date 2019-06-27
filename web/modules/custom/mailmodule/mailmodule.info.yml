@@ -1,0 +1,6 @@
+name: MailModule
+type: module
+description: 'This is a custom module for sending mails'
+package: Custom
+version: VERSION
+core: 8.x

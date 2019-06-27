@@ -1,0 +1,13 @@
+<?php
+/**
+* Implements hook_mail().
+*/
+function mailmodule_mail( &$message, $params) {
+ $options = array(
+   'langcode' => $message['langcode'],
+ );
+     $message['from'] = \Drupal::config('system.site')->get('mail');
+     $message['subject'] = t('Mail sentW: @title', array('@title' => $params['node_title']), $options);
+     $message['body'][] = $params['message'];
+}
+?>

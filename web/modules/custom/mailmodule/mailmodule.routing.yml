@@ -1,0 +1,7 @@
+configformail:
+  path: '/configmail'
+  defaults:
+    _form: 'Drupal\mailmodule\Form\configform'
+    _title: 'Custom Module for building config form'
+  requirements:
+    _permission: 'access content'
