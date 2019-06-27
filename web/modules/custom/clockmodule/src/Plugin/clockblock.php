@@ -25,10 +25,6 @@ class clockblock extends BlockBase {
     $res=Json::decode($data);
     $config = $this->getConfiguration();
      return [
-         '#theme' => 'weather',
-         '#city' => $city,
-         '#description'=>$desc,
-         '#image'=> $path,
          '#min_temp'=>$res['main']['utcOffset'],
          '#max_temp'=>$res['main']['timeZoneName'],
          '#pressure' =>$res['main']['pressure'],
