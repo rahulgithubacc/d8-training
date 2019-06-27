@@ -1,5 +1,5 @@
 <?php
-namespace Drupal\weather\Services;
+namespace Drupal\clockmodule\Services;
 class MyService{
     public function myservice()
     {
