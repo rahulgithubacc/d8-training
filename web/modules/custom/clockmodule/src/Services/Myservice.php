@@ -5,6 +5,7 @@ class MyService{
     {
 			$client=new \GuzzleHttp\Client();
 			$response=$client->request('http://worldclockapi.com/api/json/est/now');
+			// print_r($response);
 			return $response->getBody();
     }
 }    

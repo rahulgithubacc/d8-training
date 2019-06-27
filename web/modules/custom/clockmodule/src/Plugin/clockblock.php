@@ -23,18 +23,17 @@ class clockblock extends BlockBase {
     $service = \Drupal::service('clockmoduleservice');
     $data=$service->myservice();
     $res=Json::decode($data);
-    // $config = $this->getConfiguration();
-    //  return [
-    //      '#theme' => 'weather',
-    //      '#city' => $city,
-    //      '#description'=>$desc,
-    //      '#image'=> $path,
-    //      '#min_temp'=>$res['main']['utcOffset'],
-    //      '#max_temp'=>$res['main']['timeZoneName'],
-    //      '#pressure' =>$res['main']['pressure'],
-    //      '#humidity' =>$res['main']['humidity'],
-    //      '#temp'=>$res['main']['temp']
-    //  ];
-    print($res);
+    $config = $this->getConfiguration();
+     return [
+         '#theme' => 'weather',
+         '#city' => $city,
+         '#description'=>$desc,
+         '#image'=> $path,
+         '#min_temp'=>$res['main']['utcOffset'],
+         '#max_temp'=>$res['main']['timeZoneName'],
+         '#pressure' =>$res['main']['pressure'],
+         '#humidity' =>$res['main']['humidity'],
+         '#temp'=>$res['main']['temp']
+     ];
       }
 }
