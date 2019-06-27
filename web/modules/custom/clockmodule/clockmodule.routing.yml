@@ -1,0 +1,7 @@
+clockmodule.settings:
+ path: '/clock'
+ defaults:
+    _form: 'Drupal\clock\Form\configform'
+    _title: 'Custom Module for getting weather updates'
+ requirements:
+    _permission: 'administer site configuration' 
